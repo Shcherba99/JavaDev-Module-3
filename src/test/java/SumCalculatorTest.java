@@ -15,15 +15,17 @@ class SumCalculatorTest {
 
     @Test
     void testSumWhenInputValue1ShouldReturn1() {
-        int result = sumCalculator.sum(1);
-        assertEquals(1, result);
+        int actual = sumCalculator.sum(1);
+        int expected = 1;
+        assertEquals(expected, actual);
     }
 
 
     @Test
     void testSumWhenInputValue3ShouldReturn6() {
-        int result = sumCalculator.sum(3);
-        assertEquals(6, result);
+        int actual = sumCalculator.sum(3);
+        int expected = 6;
+        assertEquals(expected, actual);
     }
 
 
