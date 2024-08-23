@@ -8,13 +8,13 @@ class SumCalculatorTest {
 
 
     @BeforeEach
-    void init() {
+    public void init() {
         sumCalculator = new SumCalculator();
     }
 
 
     @Test
-    void testSumWhenInputValue1ShouldReturn1() {
+    public void testSumWhenInputValue1ShouldReturn1() {
         int actual = sumCalculator.sum(1);
         int expected = 1;
         assertEquals(expected, actual);
@@ -22,7 +22,7 @@ class SumCalculatorTest {
 
 
     @Test
-    void testSumWhenInputValue3ShouldReturn6() {
+    public void testSumWhenInputValue3ShouldReturn6() {
         int actual = sumCalculator.sum(3);
         int expected = 6;
         assertEquals(expected, actual);
@@ -30,7 +30,7 @@ class SumCalculatorTest {
 
 
     @Test
-    void testSumWhenInputValue0ShouldThrowIllegalArgumentException() {
+    public void testSumWhenInputValue0ShouldThrowIllegalArgumentException() {
         assertThrows(IllegalArgumentException.class, () -> sumCalculator.sum(0));
     }
 }
